@@ -1,0 +1,257 @@
+/* General Styling */
+
+.header-hero .container
+     { position: relative; 
+        z-index: 1;
+    }
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #0b060655;
+
+}
+/* round border with dottes */
+.rounded-img { 
+      width: 500px;
+      height: 500px; 
+     border-radius: 50%; object-fit: cover; 
+     border: 5px dotted #cec2b6;
+  
+     float: right; 
+     margin-left: 20px;
+     
+}
+/* Decorative font */
+.custom-decorative {
+    margin: 1;
+    text-align: left; /* Align text to the left */
+    font-family: 'Courier New', Courier, monospace; /* Decorative font */
+    font-size: 1.5em; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    color: #e8dada; /* Set a color for the text */
+    padding: 10px 20px;
+    border-left: 5px solid #007bff; /* add a decorative left border */
+}
+.navbar .navbar-nav .nav-link {
+    color: orange;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #e2ddd7; /* Slightly  shade for hover effect */
+}
+.text-animate {
+    display: inline-block;/* Animation on heading text */
+    animation: text-pop-up 1s ease-in-out infinite alternate;
+}
+
+@keyframes text-pop-up {/* animation */
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+
+
+.container-fluid{
+    margin: 0 !important ;
+
+}
+/* hero class specification */
+.hero {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    color: white;
+    margin-top: 10px;
+    width: 100%; 
+    background: #060809; /* Dark background */ 
+    
+    padding: 3rem 0; /* Padding for top and bottom */
+    
+}
+.header-hero
+ { 
+    padding-top: 30px !important; /* Adjust the value as needed */ 
+    background: url('./new3.jpeg') center center no-repeat; 
+    
+    background-size: cover; 
+    position: relative;
+}
+
+
+#about h1 {
+    margin-bottom: 1.5rem;
+}
+
+#about img {
+    max-width: 200px; 
+    margin-top: 1rem; 
+    height: 100;
+}
+.custom-img {
+    max-width: 50px; 
+    height: auto;
+    align-items: right;
+    float: right;
+    
+    margin-top: 1rem; 
+}
+.custom-row {
+    display: flex; 
+    justify-content: flex-end;
+    padding-top: 20px; /* Add padding to the top */
+    padding-bottom: 20px; /* Add padding to the bottom */
+    margin-top: 20px; /* Add margin to the top */
+    margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+
+.align-right { 
+    margin-left: 0;
+ }
+
+.custom-img2
+ { max-width: 100%; /* Ensure image is responsive */ 
+   height: auto; /* Maintain aspect ratio */ 
+}
+.content {
+    max-width: 800px; /* Adjust width as needed */
+    font-style: bold;
+    margin: 0 auto; /* Center the content */
+    padding: 30px; /* Optional: Add padding for spacing */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Customizations */
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+
+.decorative-p {
+    background-color: #466c92; /* Light grey background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.card-body {
+    color: #333; /* Dark grey text color */
+}
+
+.card-title {
+    color: #000; /* Black text color for card titles */
+}
+
+
+.decorative-p strong {
+    color: #0a1828; /* Bootstrap primary color */
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.img-thumbnail {
+    border-radius: 50%; /* Make the image circular */
+    width: 250px; /* Set the width to desired size */
+    height: 250px; /* Set the height to desired size */
+    object-fit: cover; /* Ensure the image covers the specified dimensions */
+}
+
+#about p, #about ul {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+#about ul {
+    padding-left: 20px; /* Adjust the list indent */
+}
+
+
+#about p, #about ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+#about
+{
+    padding: 3rem 0;
+}
+
+#about ul {
+    padding-left: 20px; /* Adjust the list indent */
+}
+#contact {
+    background: #f8f9fa; /* Light background color for contrast */
+    padding: 3rem 0; /* Padding for top and bottom */
+}
+
+#contact h2 {
+    color: #343a40; /* Dark color for the heading */
+}
+
+#contact .form-floating .form-control {
+    border-radius: 0.25rem; /* Rounded corners for input fields */
+    box-shadow: 0 2px 5px rgba(50, 23, 23, 0.1); /* Subtle shadow for input fields */
+}
+
+#contact .btn-primary {
+    background-color: #007bff; /* Primary color for button */
+    border: none; /* Remove border */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+#skills {
+    background-color: #f8f9fa; /* Light background color for the section */
+    padding: 2rem 0; /* Top and bottom padding */
+}
+
+#skills .card {
+    transition: transform 0.3s, box-shadow 1.3s; /* Smooth transitions */
+}
+
+#skills .card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+#skills h1 {
+    color: #343a40; /* Dark color for the section title */
+}
+
+#skills .card-title i {
+    margin-right: 0.5rem; /* Space between icon and title */
+}
+
+.social-icons a { 
+    color: #6c757d; 
+    margin: 0 10px; /* Add space between icons */ 
+    transition: color 0.3s; font-size: 1.5rem; /* Increase icon size */ 
+} .social-icons a:hover { 
+    color: #1daeb6; 
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ddd;
+}
